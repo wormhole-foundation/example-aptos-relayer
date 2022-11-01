@@ -36,5 +36,5 @@ npm run build
 ### Run
 
 ```
-APTOS_KEY="" APTOS_ADDRESS="" SPY="localhost:7073" APTOS_URL="https://testnet.aptoslabs.com" NETWORK="testnet" npm run start
+APTOS_KEY="" APTOS_ADDRESS="" SPY="localhost:7073" APTOS_URL="https://testnet.aptoslabs.com" AIRDROP_AMOUNT="10000000" NETWORK="testnet" npm run start
 ```

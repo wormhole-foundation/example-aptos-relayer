@@ -34,6 +34,13 @@ if (!spy) {
 }
 export const SPY = spy;
 
+const airdropAmount = process.env.AIRDROP_AMOUNT;
+if (!airdropAmount) {
+  console.error("AIRDROP_AMOUNT is required!");
+  process.exit(1);
+}
+export const AIRDROP_AMOUNT = airdropAmount;
+
 const aptosUrl = process.env.APTOS_URL;
 if (!aptosUrl) {
   console.error("APTOS_URL is required!");
@@ -64,8 +71,6 @@ export const NETWORK = network;
 
 export const APTOS_TOKEN_BRIDGE_ADDRESS =
   CONTRACTS[NETWORK === "testnet" ? "TESTNET" : "MAINNET"].aptos.token_bridge;
-
-export const AIRDROP_AMOUNT = "1000000"; // 0.01
 
 export const generateAirdropPayload = (recipientAddress: string) => ({
   function: "0x1::aptos_account::transfer",
