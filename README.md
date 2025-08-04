@@ -1,5 +1,7 @@
 # Example Aptos Relayer
 
+This repository is deprecated and archived. If you are attempting to relay Wormhole messages to/from Aptos, we recommend using the newer Executor relaying system: https://github.com/wormholelabs-xyz/example-messaging-executor
+
 ## Run a Spy (Prerequisite)
 
 ### Mainnet
